@@ -1,3 +1,20 @@
+.header {
+  width: 1360px;
+  height: 35px;
+  background: #99739e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header p {
+  margin-left: 15px;
+  color: white;
+}
+
 .wrapper {
   background: url(../img/back.jpg);
   width: 1360px;
@@ -19,10 +36,10 @@
 
 .wrapper .main .main-content {
   margin-left: 370px;
-  margin-top: 30px;
 }
 
 .wrapper .main .main-content h1 {
+  padding-top: 30px;
   font-size: 60px;
   color: #dcdf98;
 }
