@@ -6,6 +6,7 @@ $colors: #dcdf98;
     background: #99739e;
     display: flex;
     align-items: center;
+    margin: 0 auto;
     p{
         margin-left: 15px;
         color: white;
@@ -13,6 +14,7 @@ $colors: #dcdf98;
 }
 .wrapper{
     background: url(../img/back.jpg);
+    background-size: cover;
     width: $width;
     margin: 0 auto;
     height: 730px;
@@ -25,6 +27,7 @@ $colors: #dcdf98;
         margin-top: 100px;
         background: rgba($color: #000000, $alpha: 0.5);
         width: 100%;
+        box-shadow: 0 2px 2px black;
         .main-content{
             margin-left: 370px;
             h1{
@@ -50,8 +53,11 @@ $colors: #dcdf98;
                 outline: none;
                 position: relative;
             }
+            ::placeholder{
+                color: $colors;
+            }
             input[type="text"]:focus{
-                border: 10px solid $colors;
+                box-shadow: 0 0 0 10px $colors;
             }
             input[name="name"]{
                 width: 120px;
@@ -69,6 +75,7 @@ $colors: #dcdf98;
                 height: 30px;
                 border: none;
                 border-radius: 6px; 
+                
             }
         }
     }

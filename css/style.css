@@ -8,6 +8,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
 }
 
 .header p {
@@ -17,6 +18,7 @@
 
 .wrapper {
   background: url(../img/back.jpg);
+  background-size: cover;
   width: 1360px;
   margin: 0 auto;
   height: 730px;
@@ -32,6 +34,8 @@
   margin-top: 100px;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
+  -webkit-box-shadow: 0 2px 2px black;
+          box-shadow: 0 2px 2px black;
 }
 
 .wrapper .main .main-content {
@@ -65,8 +69,25 @@
   position: relative;
 }
 
+.wrapper .main .main-content ::-webkit-input-placeholder {
+  color: #dcdf98;
+}
+
+.wrapper .main .main-content :-ms-input-placeholder {
+  color: #dcdf98;
+}
+
+.wrapper .main .main-content ::-ms-input-placeholder {
+  color: #dcdf98;
+}
+
+.wrapper .main .main-content ::placeholder {
+  color: #dcdf98;
+}
+
 .wrapper .main .main-content input[type="text"]:focus {
-  border: 10px solid #dcdf98;
+  -webkit-box-shadow: 0 0 0 10px #dcdf98;
+          box-shadow: 0 0 0 10px #dcdf98;
 }
 
 .wrapper .main .main-content input[name="name"] {
